@@ -1,0 +1,166 @@
+include components/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&family=PT+Sans&family=Roboto&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.css")
+        title bosslogics
+    body 
+        .wrapper.header-bg
+            .header
+                img(src="img/logo.png", alt="logo").logo
+                ul.header-menu.icons
+                    li 
+                        a(href="#") 
+                            img(src="img/fb-logo.png", alt="fb-ico")
+                    li 
+                        a(href="#") 
+                            img(src="img/tw-logo.png", alt="fb-ico")
+                    li 
+                        a(href="#") 
+                            img(src="img/fb-logo.png", alt="fb-ico")
+                    li 
+                        a(href="#") 
+                            img(src="img/fb-logo.png", alt="fb-ico")
+                ul.header-menu
+                    li 
+                        a(href="#") SOLUTIONS
+                    li 
+                        a(href="#") TUGETHER
+                    li 
+                        a(href="#") CUSTOMERS
+                    li 
+                        a(href="#") PIRCING
+                    li 
+                        a(href="#") ABOUT
+                    li 
+                        a(href="#") CONTACT
+            h1.h1.after Software that works the way you do 
+            p.info Simplify, transform, and automate your product creation, sales, and management with BOSS Logics—so you can get products to market faster and more effectively.
+            a(href="#").button GET STARTER
+            a(href="#").button2 LEARN MORE
+        .wrapper.main-bg
+            img(src="img/gold.png", alt="gold").gold
+            .right-block
+                h1.h1.main-h1 Your customers don't have to be in-store for you to be together.
+                p.info.main-info Introducing a virtual in-store experience that sets a new standard for personalized online interactions.
+                a(href="#").button FIND OUT MORE
+        .wrapper.main
+            .left
+                h1.h1 A different type of software platform
+                h3.h3 Modeled  
+                p.info During development, we model against your existing (or aspirational) processes and workflows. It’s the closest thing to bespoke software you’ll find.
+                h3.h3 Collaborative  
+                p.info System workflows that are created around your product development process, not the other way around.
+                h3.h3 Communicative  
+                p.info Your products don’t live in a vacuum, and neither should your software. BOSS Logics is designed to integrate directly with your other systems.
+            .right
+                img(src="img/pc.png", alt="pc").pc
+        .wrapper 
+            h1.big-h1 What does that mean for you?
+            .cards 
+                figure.card1 
+                    img(src="img/img1.png", alt="img1")
+                    figcaption 
+                        h3.card-h3  Streamlined processes  
+                        p.card-info Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                figure.card2 
+                    img(src="img/img2.png", alt="img2")
+                    figcaption 
+                        h3.card-h3  Quicker time to market   
+                        p.card-info Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                figure.card3
+                    img(src="img/img3.png", alt="img3")
+                    figcaption 
+                        h3.card-h3 More agile workflows  
+                        p Contrary to popular belief, Lorem Ipsum is not simply random text. 
+            .div
+                a(href="#").button LEARN MORE
+            .main
+                .left
+                    img(src="img/glas.png", alt="gold").glas
+                .right
+                    h1.h1 Trusted by leading brands
+                    p.info “Our actual go-live was perfect. It was seamless. The integration has been amazing. Our old system involved manual data entry for everything, but with the BOSS Integration, it’s as easy as changing a flag and getting updates from our ERP system.”
+                    h3.h3 Dean LeNeve 
+                    .info Director of Operations, David Webb  
+            .brends 
+                a(href="#") 
+                    img(src="img/brend1.png", alt="brend1")
+                a(href="#")
+                    img(src="img/brend2.png", alt="drend2") 
+                a(href="#")
+                    img(src="img/brend3.png", alt="drend3")
+                a(href="#")
+                    img(src="img/brend4.png", alt="drend4")
+            .brends2 
+                a(href="#")
+                    img(src="img/brend5.png", alt="drend5")
+                a(href="#")
+                    img(src="img/brend6.png", alt="drend6")
+                a(href="#")
+                    img(src="img/brend7.png", alt="drend7")
+                a(href="#")
+                    img(src="img/brend8.png", alt="drend8")
+        .wrapper.footer-bg 
+            h1.h1.footer-h1 Ready to see what BOSS Logics can do for you?
+            a(href="#").button GET A DEMO 
+        .wrapper.footer
+            .column
+                img(src="img/footer-logo.png", alt="logo").footer-logo
+                p.footer-info Simplify, transform, and automate your product creation, sales, and management.
+            .column
+                h3.h3 POPULAR LINKS  
+                ul.footer-list
+                    li 
+                        a(href="#") Solutions
+                    li 
+                        a(href="#") Together
+                    li 
+                        a(href="#") Customers
+                    li 
+                        a(href="#") Pricing
+                    li 
+                        a(href="#") About
+                    li 
+                        a(href="#") Contact
+            .column 
+                h3.h3 GET IN TOUCH
+                .mail-block
+                    a(href="#").mail info@bosslogics.com 
+                .phone-block
+                    a(href="#").phone 212-372-3399
+                .loc-block
+                    a(href="#").loc BOSS Logics30-30 47th Ave #470 LIC, NY 11101
+            .column 
+                h3.h3 INTERESTED IN MORE INFORMATION? 
+                form(action="php/server.php") 
+                    input(type="text" class="text" placeholder="Your email")
+                    input(type="reset" class="contact" value="CONTACT")
+                .footer-menu
+                    ul.header-menu.icons.footer-icons
+                        li 
+                            a(href="#") 
+                                img(src="img/fb-logo.png", alt="fb-ico")
+                        li 
+                            a(href="#") 
+                                img(src="img/tw-logo.png", alt="fb-ico")
+                        li 
+                            a(href="#") 
+                                img(src="img/fb-logo.png", alt="fb-ico")
+                        li 
+                            a(href="#") 
+                                img(src="img/fb-logo.png", alt="fb-ico")
+        .wrapper.footer-bottom.line-block
+            .wrapper.line
+        .wrapper.footer-bottom    
+            p.last-info © 2020 BOSS Logics
+            p.last-info Privacy Policy            Terms & Conditions
+
+                

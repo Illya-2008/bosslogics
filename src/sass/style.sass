@@ -1,0 +1,292 @@
+@import components/vars
+@import components/mixins
+    
+body
+    margin: 0
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+.wrapper
+    padding: 0 220px
+
+.header
+    margin-bottom: 200px
+    padding-top: 40px
+
+.header-bg
+    background: url(../img/header-bg.png) no-repeat right
+    margin-bottom: 300px
+
+.logo
+    width: 150px
+    display: inline-block
+
+.header-menu
+    list-style: none
+    float: right
+    margin: 0
+    display: inline-block
+
+.header-menu li
+    padding: 0 20px
+    display: inline-block
+
+.header-menu li a
+    color: $white
+    font-size: 16px
+    font-weight: 300
+    font-family: Geometria-Medium,Arial,Helvetica,sans-serif
+    text-decoration: none
+
+.icons li
+    padding: 0 10px
+
+.line
+    width: 2px
+    height: 120px
+    margin-right: 20px
+    display: inline-block
+    background-color: $light-blue
+
+.h1
+    font-size: 70px
+    line-height: 74px
+    color: #1a1a1a
+    font-weight: 600
+    max-width: 700px
+    margin-bottom: 0
+    margin-left: 26px
+    display: inline-block
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+        width: 2px
+        height: 100%
+        top: 0
+        left: -25px
+        margin-right: 20px
+        display: inline-block
+        background-color: $light-blue
+
+.after
+    &::after
+        content: "(REALLY)"
+        font-size: 35px
+        letter-spacing: 4px
+        line-height: 91px
+        color: #0099ff
+        font-weight: 500
+
+.info
+    +info
+    padding-bottom: 20px
+
+.button
+    +button
+
+.button2
+    padding: 15px 60px
+    border: 2px solid $blue
+    border-radius: 50px
+    color: #000
+    margin-right: 20px
+    font-weight: 700
+    background-color: $white
+    text-decoration: none
+    transition: all .5s ease
+    &:hover
+        color: $white
+        background-color: $blue
+        border: 2px solid $blue
+
+.main-bg
+    margin-bottom: 300px
+    background: url(../img/main-bg.png) no-repeat left
+
+.gold
+    width: 500px
+    text-align: left
+    display: inline-block
+
+.main-h1
+    margin-top: 0
+    text-align: left
+    margin-bottom: 30px
+
+.right-block
+    padding-left: 30px
+    display: inline-block
+
+.h3
+    font-size: 20px
+    letter-spacing: 2px
+    color: #0099ff
+    font-weight: bold
+
+.main
+    display: flex
+    justify-content: space-between
+
+.pc
+    width: 550px
+
+.main
+    margin-bottom: 400px
+
+.big-h1
+    font-size: 70px
+    text-align: center
+
+.cards
+    display: flex
+    margin-bottom: 50px
+    justify-content: space-between
+
+.card1,
+.card2,
+.card3
+    max-width: 200px
+    text-align: center
+
+.card-h3
+    max-width: 150px
+    font-size: 20px
+    text-align: center
+    display: inline-block
+
+.div
+    text-align: center
+    margin-bottom: 200px
+
+.glas
+    width: 500px
+
+.brends,
+.brends2
+    display: flex
+    text-align: center
+    justify-content: space-between
+
+.brends2
+    margin-bottom: 200px
+
+.footer-h1
+    max-width: 600px
+    display: block
+    margin-bottom: 50px
+
+.footer-bg
+    padding-top: 200px
+    padding-bottom: 200px
+    background: url(../img/footer-bg.png) no-repeat right
+
+.footer,
+.footer-bottom
+    display: flex
+    justify-content: space-between
+    padding: 30px 200px
+    background-color: #001626
+
+.footer-info
+    +info
+    max-width: 300px
+    line-height: 20px
+    color: $white
+
+.footer-logo
+    margin-bottom: 20px
+
+.column
+    position: relative
+    display: inline-block
+
+.footer-list
+    padding: 0
+    list-style: none
+
+.footer-list li a
+    color: $white
+    text-decoration: none
+
+.mail,
+.phone,
+.loc
+    margin: 10px 0
+    padding-left: 20px 
+    max-width: 200px
+    color: $white
+    display: block
+    text-decoration: none
+
+.mail
+    &::before
+        content: ""
+        position: absolute
+        width: 15px
+        height: 15px
+        left: 0
+        top: 75px
+        background: url(../img/mail.png) no-repeat
+
+.phone
+    &::before
+        content: ""
+        position: absolute
+        width: 15px
+        height: 15px
+        left: 0
+        top: 101px
+        background: url(../img/phone.png) no-repeat
+
+.loc
+    max-width: 120px
+    &::before
+        content: ""
+        position: absolute
+        width: 15px
+        height: 15px
+        left: 0
+        top: 133px
+        background: url(../img/loc.png) no-repeat
+
+.footer-menu
+    float: left
+    margin-top: 40px
+    display: block
+
+.footer-icons
+    padding: 0
+
+.text
+    padding: 13px 120px 13px 20px
+    border: 2px solid $white
+    border-radius: 25px
+    margin-right: 20px
+    background-color: #001626
+
+.contact
+    color: $white
+    background: $blue
+    font-weight: 600
+    border: 2px solid $blue
+    padding: 13px 50px
+    border-radius: 25px
+    transition: all .5s ease
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    &:hover
+        cursor: pointer
+        color: #000
+        border: 2px solid $blue
+        background-color: $white
+
+.line
+    width: 100%
+    height: 1px
+    background-color: #66737d
+
+.last-info
+    margin: 0
+    color: #66737d
+
+.line-block
+    padding: 0 200px
