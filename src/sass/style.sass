@@ -6,15 +6,37 @@ body
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 
 .wrapper
-    padding: 0 220px
+    padding: 0
+    +media(400)
+        padding: 0 50px
+    +media(500)
+        padding: 0 100px
+    +media(800)
+        padding: 0 200px
 
 .header
-    margin-bottom: 200px
     padding-top: 40px
+    +media(1100)
+        margin-bottom: 200px
+
+.a
+    text-decoration: none
+    color: $blue
+    position: relative
+    &:hover::before
+        content: "" 
+        position: absolute
+        width: 100%
+        height: 1px
+        top: 30px
+        background-color: $blue
 
 .header-bg
-    background: url(../img/header-bg.png) no-repeat right
+    background: url(../img/header-bg2.png) no-repeat right
     margin-bottom: 300px
+    +media(1550)
+        background: url(../img/header-bg.png) no-repeat right
+        
 
 .logo
     width: 150px
@@ -24,7 +46,62 @@ body
     list-style: none
     float: right
     margin: 0
-    display: inline-block
+    display: none
+    +media(1600)
+        display: inline-block
+
+.buttons
+    display: flex
+    flex-wrap: wrap
+
+.buttons a
+    margin-bottom: 20px 
+
+.burger
+    width: 50px
+    height: 50px
+    float: right
+    border: 2px solid $white
+    border-radius: 8px
+    background-color: $white 
+    transition: all .5s ease
+    +media(1600)
+        display: none
+    &:hover
+        background-color: $blue
+
+.stick1
+    width: 40px
+    height: 10px
+    margin: 0 auto
+    margin-top: 5px
+    border-radius: 4px
+    background-color: $blue
+    transition: all .5s ease
+    &:hover
+        background-color: $white
+
+.stick2
+    width: 40px
+    height: 10px
+    margin: 0 auto
+    margin-top: 5px
+    border-radius: 4px
+    background-color: $blue
+    transition: all .5s ease
+    &:hover
+        background-color: $white
+
+.stick3    
+    width: 40px
+    height: 10px
+    margin: 0 auto
+    margin-top: 5px
+    border-radius: 4px
+    background-color: $blue
+    transition: all .5s ease
+    &:hover
+        background-color: $white
 
 .header-menu li
     padding: 0 20px
@@ -36,6 +113,16 @@ body
     font-weight: 300
     font-family: Geometria-Medium,Arial,Helvetica,sans-serif
     text-decoration: none
+    position: relative
+    &:hover::before
+        content: "" 
+        position: absolute
+        width: 100%
+        height: 1px
+        top: 30px
+        background-color: $white
+        
+        
 
 .icons li
     padding: 0 10px
@@ -48,8 +135,7 @@ body
     background-color: $light-blue
 
 .h1
-    font-size: 70px
-    line-height: 74px
+    font-size: 40px
     color: #1a1a1a
     font-weight: 600
     max-width: 700px
@@ -57,6 +143,9 @@ body
     margin-left: 26px
     display: inline-block
     position: relative
+    +media(900)
+        line-height: 74px
+        font-size: 70px
     &::before
         content: ""
         position: absolute
@@ -69,6 +158,9 @@ body
         background-color: $light-blue
 
 .after
+    max-width: 500px
+    +media(1800)
+        max-width: 700px
     &::after
         content: "(REALLY)"
         font-size: 35px
@@ -104,9 +196,11 @@ body
     background: url(../img/main-bg.png) no-repeat left
 
 .gold
-    width: 500px
+    width: 300px
     text-align: left
     display: inline-block
+    +media(800)
+        width: 500px
 
 .main-h1
     margin-top: 0
@@ -114,8 +208,9 @@ body
     margin-bottom: 30px
 
 .right-block
-    padding-left: 30px
     display: inline-block
+    +media(1700)
+        padding-left: 30px
 
 .h3
     font-size: 20px
@@ -124,29 +219,42 @@ body
     font-weight: bold
 
 .main
-    display: flex
-    justify-content: space-between
+    +media(1650)
+        display: flex
+        justify-content: space-between
 
 .pc
-    width: 550px
+    width: 250px
+    +media(370)
+        width: 300px
+    +media(800)
+        width: 550px
 
 .main
     margin-bottom: 400px
 
 .big-h1
-    font-size: 70px
+    font-size: 40px
     text-align: center
+    +media(800)
+        font-size: 70px
 
 .cards
     display: flex
+    flex-wrap: wrap
     margin-bottom: 50px
-    justify-content: space-between
+    +media(960)
+        padding: 0 150px
+    +media(1500)
+        display: flex
+        justify-content: space-between
 
 .card1,
 .card2,
 .card3
     max-width: 200px
     text-align: center
+    margin: 0 auto
 
 .card-h3
     max-width: 150px
@@ -159,16 +267,25 @@ body
     margin-bottom: 200px
 
 .glas
-    width: 500px
+    width: 300px
+    +media(800)
+        width: 500px
 
 .brends,
 .brends2
     display: flex
+    flex-wrap: wrap
     text-align: center
-    justify-content: space-between
+    +media(1300)
+        display: flex
+        justify-content: space-between
 
 .brends2
     margin-bottom: 200px
+
+.brends a,
+.brends2 a
+    margin: 50px
 
 .footer-h1
     max-width: 600px
@@ -176,16 +293,26 @@ body
     margin-bottom: 50px
 
 .footer-bg
-    padding-top: 200px
-    padding-bottom: 200px
-    background: url(../img/footer-bg.png) no-repeat right
+    background: url(../img/footer-bg2.png) no-repeat right
+    padding: 200px 0
+    +media(1550)
+        padding: 200px
+        background: url(../img/footer-bg.png) no-repeat right
 
 .footer,
 .footer-bottom
     display: flex
+    padding-top: 30px
     justify-content: space-between
-    padding: 30px 200px
     background-color: #001626
+    +media(500)
+        padding: 30px 200px
+
+.footer
+    flex-wrap: wrap
+    padding: 30px 50px
+    +media(1650)
+        padding: 50px 200px
 
 .footer-info
     +info
@@ -258,11 +385,13 @@ body
     padding: 0
 
 .text
-    padding: 13px 120px 13px 20px
+    padding: 13px 50px 13px 20px
     border: 2px solid $white
     border-radius: 25px
     margin-right: 20px
     background-color: #001626
+    +media(960)
+        padding: 13px 120px 13px 20px
 
 .contact
     color: $white
@@ -289,4 +418,7 @@ body
     color: #66737d
 
 .line-block
-    padding: 0 200px
+    padding: 0
+    +media(400)
+        padding: 0 200px
+

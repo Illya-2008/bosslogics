@@ -14,7 +14,8 @@ html(lang="en")
     body 
         .wrapper.header-bg
             .header
-                img(src="img/logo.png", alt="logo").logo
+                a(href="#") 
+                    img(src="img/logo.png", alt="logo").logo
                 ul.header-menu.icons
                     li 
                         a(href="#") 
@@ -28,6 +29,10 @@ html(lang="en")
                     li 
                         a(href="#") 
                             img(src="img/fb-logo.png", alt="fb-ico")
+                .burger
+                    .stick1 
+                    .stick2 
+                    .stick3
                 ul.header-menu
                     li 
                         a(href="#") SOLUTIONS
@@ -43,8 +48,9 @@ html(lang="en")
                         a(href="#") CONTACT
             h1.h1.after Software that works the way you do 
             p.info Simplify, transform, and automate your product creation, sales, and management with BOSS Logics—so you can get products to market faster and more effectively.
-            a(href="#").button GET STARTER
-            a(href="#").button2 LEARN MORE
+            .buttons
+                a(href="#").button GET STARTER
+                a(href="#").button2 LEARN MORE
         .wrapper.main-bg
             img(src="img/gold.png", alt="gold").gold
             .right-block
@@ -54,11 +60,14 @@ html(lang="en")
         .wrapper.main
             .left
                 h1.h1 A different type of software platform
-                h3.h3 Modeled  
+                h3.h3 
+                    a(href="#").a Modeled  
                 p.info During development, we model against your existing (or aspirational) processes and workflows. It’s the closest thing to bespoke software you’ll find.
-                h3.h3 Collaborative  
+                h3.h3 
+                    a(href="#").a Collaborative  
                 p.info System workflows that are created around your product development process, not the other way around.
-                h3.h3 Communicative  
+                h3.h3 
+                    a(href="#").a Communicative  
                 p.info Your products don’t live in a vacuum, and neither should your software. BOSS Logics is designed to integrate directly with your other systems.
             .right
                 img(src="img/pc.png", alt="pc").pc
@@ -88,30 +97,31 @@ html(lang="en")
                 .right
                     h1.h1 Trusted by leading brands
                     p.info “Our actual go-live was perfect. It was seamless. The integration has been amazing. Our old system involved manual data entry for everything, but with the BOSS Integration, it’s as easy as changing a flag and getting updates from our ERP system.”
-                    h3.h3 Dean LeNeve 
+                    h3.h3 
+                        a(href="#").a Dean LeNeve 
                     .info Director of Operations, David Webb  
             .brends 
                 a(href="#") 
                     img(src="img/brend1.png", alt="brend1")
                 a(href="#")
-                    img(src="img/brend2.png", alt="drend2") 
+                    img(src="img/brend2.png", alt="brend2") 
                 a(href="#")
-                    img(src="img/brend3.png", alt="drend3")
+                    img(src="img/brend3.png", alt="brend3")
                 a(href="#")
-                    img(src="img/brend4.png", alt="drend4")
+                    img(src="img/brend4.png", alt="brend4")
             .brends2 
                 a(href="#")
-                    img(src="img/brend5.png", alt="drend5")
+                    img(src="img/brend5.png", alt="brend5")
                 a(href="#")
-                    img(src="img/brend6.png", alt="drend6")
+                    img(src="img/brend6.png", alt="brend6")
                 a(href="#")
-                    img(src="img/brend7.png", alt="drend7")
+                    img(src="img/brend7.png", alt="brend7")
                 a(href="#")
-                    img(src="img/brend8.png", alt="drend8")
-        .wrapper.footer-bg 
+                    img(src="img/brend8.png", alt="brend8")
+        .footer-bg 
             h1.h1.footer-h1 Ready to see what BOSS Logics can do for you?
             a(href="#").button GET A DEMO 
-        .wrapper.footer
+        .footer
             .column
                 img(src="img/footer-logo.png", alt="logo").footer-logo
                 p.footer-info Simplify, transform, and automate your product creation, sales, and management.
@@ -159,7 +169,7 @@ html(lang="en")
                                 img(src="img/fb-logo.png", alt="fb-ico")
         .wrapper.footer-bottom.line-block
             .wrapper.line
-        .wrapper.footer-bottom    
+        .footer-bottom    
             p.last-info © 2020 BOSS Logics
             p.last-info Privacy Policy            Terms & Conditions
 
